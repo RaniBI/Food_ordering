@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/restaurant-logo.png" alt="Restaurant Logo" class="logo">
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+            <!-- Toggle Button for Mobile View -->
+            <div class="mobile-menu">
+                <button class="toggle-menu" onclick="toggleMobileMenu()">☰</button>
+                <ul class="mobile-nav">
+                    <li><a href="#">Search</a></li>
+                    <li><a href="#">Offers</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </header>
+        
+
+        <!-- Filter Buttons -->
+        <div class="filter-sort">
+            <button onclick="scrollToSection('veg-section')">Veg</button>
+            <button onclick="scrollToSection('non-veg-section')">Non Veg</button>
+        </div>
+
+        <!-- Veg Section -->
+        <section id="veg-section">
+            <h2>Veg Items</h2>
+            <div class="restaurants">
+                <div class="restaurant-card" data-category="veg">
+                    <img src="images/Puttu.jpg" alt="Puttu">
+                    <h3>Puttu</h3>
+                    <p class="price">Rs.149</p>
+                    <p>Relish the flavorful and filling Puttu</p>
+                </div>
+                <div class="restaurant-card" data-category="veg">
+                    <img src="images/khichdi.jpg" alt="Khichdi">
+                    <h3>Khichdi</h3>
+                    <p class="price">Rs.149</p>
+                    <p>Experience a hearty and comforting Khichdi</p>
+                </div>
+                <div class="restaurant-card" data-category="veg">
+                    <img src="images/South Indian Meals.jpg" alt="South Indian Meals">
+                    <h3>South Indian Meals</h3>
+                    <p class="price">Rs.499</p>
+                    <p>Feast on a complete and satisfying South Indian meal</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Non-Veg Section -->
+        <section id="non-veg-section">
+            <h2>Non-Veg Items</h2>
+            <div class="restaurants">
+                <div class="restaurant-card" data-category="non-veg">
+                    <img src="images/chicken pizza.jpg" alt="Chicken Pizza">
+                    <h3>Chicken Pizza</h3>
+                    <p class="price">Rs.599</p>
+                    <p>Indulge in a rich and savory chicken pizza</p>
+                </div>
+                <div class="restaurant-card" data-category="non-veg">
+                    <img src="images/Chicken Wings.jpg" alt="Chicken Wings">
+                    <h3>Chicken Wings</h3>
+                    <p class="price">Rs.259</p>
+                    <p>Delight in spicy and crispy chicken wings</p>
+                </div>
+                <div class="restaurant-card" data-category="non-veg">
+                    <img src="images/kfc.jpg" alt="KFC">
+                    <h3>KFC</h3>
+                    <p class="price">Rs.199</p>
+                    <p>Enjoy crispy and flavorful KFC offerings</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
